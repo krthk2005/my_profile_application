@@ -1,0 +1,23 @@
+{
+  "name": "kartheek_app",
+  "version": "1.0.0",
+  "description": "about me application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krthk2005/my_profile_application.git"
+  },
+  "keywords": [
+    "kartheek",
+    "sarabu"
+  ],
+  "author": "kartheek sarabu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krthk2005/my_profile_application/issues"
+  },
+  "homepage": "https://github.com/krthk2005/my_profile_application#readme"
+}

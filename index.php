@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Kartheek</title>
-</head>
 <body>
-<h1>About PHP</h1>
+
+
+<?php
+header( 'Location: http://www.google.com' ) ;
+?>
 
 </body>
 </html>
+
+
