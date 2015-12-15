@@ -4,7 +4,7 @@
 
 
 <?php
-header( 'Location: http://www.google.com' ) ;
+header( 'Location: http://kartheek-sarabu.herokuapp.com' ) ;
 ?>
 
 </body>
