@@ -1,4 +1,4 @@
-var app=angular.module('myApp', ['ngRoute','myApp.home','myApp.detail']);
+var app=angular.module('myApp', ['ngRoute','myApp.nav.scroll','myApp.home','myApp.detail']);
 
 
 
