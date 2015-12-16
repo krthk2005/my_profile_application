@@ -1,12 +1,12 @@
-var app=angular.module('myApp', ['ngRoute','myApp.nav.scroll','myApp.home','myApp.detail']);
+var app=angular.module('myApp', ['ngRoute','myApp.home','myApp.detail']);
 
 
 
 app.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
 	$routeProvider.
       when('/', {
-        templateUrl: 'partials/home-folder/home.html',
-        controller: 'HomeCtrl'
+        templateUrl: 'partials/home-folder/main.html',
+        controller: 'MainCtrl'
       }).
       when('/details', {
         templateUrl: 'partials/details-folder/detail.html',
