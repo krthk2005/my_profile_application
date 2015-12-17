@@ -1,3 +1,4 @@
+/* For scrolling of navigation bar */
 .affix {
     top:0;
     width: 100%;
@@ -11,4 +12,22 @@
 .affix ~ .container-fluid {
     position: relative;
     top: 50px;
+}
+
+/* Carousel View */
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height:200px;
+}
+/* Footer */
+.footer-bottom {
+    background: #25292C;
+    color: #888;
+}
+.footer-bottom .copyright{
+	padding-top: 12px;
+}
+.footer-bottom .list-inline>li {
+    display: inline-block;
 }
