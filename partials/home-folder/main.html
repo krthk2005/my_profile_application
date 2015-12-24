@@ -11,10 +11,10 @@
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li ng-class="{active:tab==2}"><a  ng-click="displayContent(2)">Home</a></li>
-          <li ng-class="{active:tab==3}"><a ng-click="displayContent(3)">Biography</a></li>
-          <li ng-class="{active:tab==4}"><a ng-click="displayContent(4)">Photo gallery</a></li>
-          <li ng-class="{active:tab==5}"><a ng-click="displayContent(5)">Milestones</a></li>
+          <li data-toggle="collapse" data-target=".navbar-collapse" ng-class="{active:tab==2}"><a  ng-click="displayContent(2)">Home</a></li>
+          <li data-toggle="collapse" data-target=".navbar-collapse" ng-class="{active:tab==3}"><a ng-click="displayContent(3)">Biography</a></li>
+          <li data-toggle="collapse" data-target=".navbar-collapse" ng-class="{active:tab==4}"><a ng-click="displayContent(4)">Photo gallery</a></li>
+          <li data-toggle="collapse" data-target=".navbar-collapse" ng-class="{active:tab==5}"><a ng-click="displayContent(5)">Milestones</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li ng-class="{active:tab==6}"><a ng-click="displayContent(6)"><span class="glyphicon glyphicon-user"></span>Contact Me</a></li>
