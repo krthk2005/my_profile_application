@@ -35,6 +35,7 @@
 #home .container-fluid, #values .container-fluid, #portfolio .container-fluid {
     padding: 60px 50px;
 }
+
 .bg-grey{
     background-color: #f6f6f6;
 }
@@ -43,4 +44,23 @@
 }
 .logo{
     font-size: 200px;
+}
+
+#portfolio .carousel-indicators{
+    bottom: -30px;
+}
+#portfolio .carousel-control.right, #portfolio .carousel-control.left {
+    background-image: none;
+    color: #000000;
+}
+
+#portfolio .carousel-indicators li {
+    border-color: #ABABAB;
+}
+
+#portfolio .carousel-indicators li.active {
+    background-color: #000000;
+}
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
