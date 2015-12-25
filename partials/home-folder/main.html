@@ -12,12 +12,12 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand"  ng-click="displayContent(1)">KARTHEEK</a>
+        <a class="navbar-brand">KARTHEEK</a>
       </div>
       <div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#home">Home</a></li>
+            <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#about">About Me</a></li>
             <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#biography">Biography</a></li>
             <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#values">My Values</a></li>
             <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#portfolio">Portfolio</a></li>
@@ -25,7 +25,7 @@
             <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#milestones">Milestones</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#contact"><span class="glyphicon glyphicon-user"></span>Contact</a></li>
+            <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -70,11 +70,11 @@
   </div>
   <!-- Carousel part  ends here-->
   <!-- About me part  starts here-->
-  <div id="home">
+  <div id="about">
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-8">
-          <h2>About Me</h2><br>
+          <h2>About Me</h2>
           <h4>Ability to code irrespective of domain. Interested in doing R&amp;D on Mobility and Web development.</h4>
           <p>I have a passion in development of Mobile and web applications. I am so proud to be developing mobile, web and hybrid applications. I have Hands on experiences working with Java, Javascript Frameworks, Android App Development and Nodejs. I am very challenging working for any challenging projects.</p>
         </div>
@@ -102,6 +102,7 @@
   <div id="values">
     <div class="container-fluid text-center">
       <h2>My Values</h2>
+      <h4 class="bottom-buffer">Personal and Cultural</h4>
       <div class="row">
         <div class="col-sm-4">
           <span class="glyphicon glyphicon-thumbs-up logo-small"></span>
@@ -143,6 +144,8 @@
   <!-- Portfolio part  starts here -->
   <div id="portfolio">
     <div class="container-fluid bg-grey text-center">
+      <h2>Portfolio</h2>
+      <h4 class=" bottom-buffer">What I have created</h4>
       <div class="col-sm-4">
         <div class="panel panel-default text-center">
           <div class="panel-heading">
@@ -188,7 +191,7 @@
           </div>
         </div>
       </div>
-      <h3>What my user say</h3>
+      <h3>What my users say about my app</h3>
       <div id="ratingsCarousel" class="carousel slide text-center" data-ride="carousel">
 
         <!-- Wrapper for slides -->
@@ -224,7 +227,36 @@
     </div>
   </div>
   <!-- Portfolio part  ends here -->
-
+  <!-- Contact part  starts here -->
+  <div id='contact'>
+    <div class="container-fluid">
+      <h2 class="text-center">Contact Me</h2>
+      <h4 class="text-center bottom-buffer">Reach me out at</h4>
+      <div class="row">
+        <div class="col-md-4">
+          <p>Drop a note.</p>
+          <address><span class="glyphicon glyphicon-map-marker"></span> Hyderabad, India</address>
+          <address><span class="glyphicon glyphicon-phone"></span> Phone: +91 8121852208</address>
+          <address><span class="glyphicon glyphicon-envelope"></span> Email: krthk.2005@gmail.com</address> 
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-md-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+          </div>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+         
+           <a href="#" target="_blank" class="btn btn-default pull-right top-buffer" role="button">Send</a>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer part  ends here -->
   <!-- Footer part  starts here -->
   <div class="footer-bottom">
    <div class="container">
