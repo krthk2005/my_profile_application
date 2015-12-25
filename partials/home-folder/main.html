@@ -1,9 +1,9 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     <h1>Kartheek Sarabu</h1>
     <h3>Image needs to keep here. It should look familier in all widths of browser</h3>
     <p>Scroll this page to see how the navbar behaves with data-spy="affix" and data-spy="scrollspy".</p>
     <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels, and the links in the navbar are automatically updated based on scroll position.</p>
-</div>
+</div> -->
 <nav class="navbar navbar-inverse navbar-static-top" data-spy="affix" data-offset-top="200">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -12,28 +12,183 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand"  ng-click="displayContent(1)">KARTHEEK.SARABU</a>
+      <a class="navbar-brand"  ng-click="displayContent(1)">KARTHEEK</a>
     </div>
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li data-toggle="collapse" data-target=".navbar-collapse" ng-class="{active:tab==2}"><a  ng-click="displayContent(2)">Home</a></li>
-          <li data-toggle="collapse" data-target=".navbar-collapse" ng-class="{active:tab==3}"><a ng-click="displayContent(3)">Biography</a></li>
-          <li data-toggle="collapse" data-target=".navbar-collapse" ng-class="{active:tab==4}"><a ng-click="displayContent(4)">Photo gallery</a></li>
-          <li data-toggle="collapse" data-target=".navbar-collapse" ng-class="{active:tab==5}"><a ng-click="displayContent(5)">Milestones</a></li>
+          <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#home">Home</a></li>
+          <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#biography">Biography</a></li>
+          <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#values">My Values</a></li>
+          <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#portfolio">Portfolio</a></li>
+          <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#photoGallery">Photo gallery</a></li>
+          <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#milestones">Milestones</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li ng-class="{active:tab==6}"><a ng-click="displayContent(6)"><span class="glyphicon glyphicon-user"></span>Contact Me</a></li>
+          <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#contact"><span class="glyphicon glyphicon-user"></span>Contact</a></li>
         </ul>
       </div>
     </div>
   </div>
 </nav>
+<!-- Carousel part  starts here-->
+<div id="galleryCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#galleryCarousel" data-slide-to="1"></li>
+    </ol>
 
-<div ng-show="tab == 1"  ng-include src="'/partials/home-folder/profile.html'"></div>
-<div ng-show="tab == 2"  ng-include src="'/partials/home-folder/home.html'"></div>
-<div ng-show="tab == 3"  ng-include src="'/partials/home-folder/biography.html'"></div>
-<div ng-show="tab == 4"  ng-include src="'/partials/home-folder/gallery.html'"></div>
-<div ng-show="tab == 5"  ng-include src="'/partials/home-folder/milestones.html'"></div>
-<div ng-show="tab == 6"  ng-include src="'/partials/home-folder/contactme.html'"></div>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="http://placehold.it/1200x400?text=IMAGE" alt="Image">
+        <div class="carousel-caption">
+          <h3>Kartheek Picutre 1</h3>
+          <p>Needs to keep some content</p>
+        </div>      
+      </div>
 
+      <div class="item">
+        <img src="http://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+        <div class="carousel-caption">
+          <h3>Kartheek Sarabu</h3>
+          <p>Sample Text</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" data-target="#galleryCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" data-target="#galleryCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- Carousel part  ends here-->
+<!-- About me part  starts here-->
+<div id="home">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8">
+        <h2>About Me</h2><br>
+        <h4>Ability to code irrespective of domain. Interested in doing R&amp;D on Mobility and Web development.</h4>
+        <p>I have a passion in development of Mobile and web applications. I am so proud to be developing mobile, web and hybrid applications. I have Hands on experiences working with Java, Javascript Frameworks, Android App Development and Nodejs. I am very challenging working for any challenging projects.</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-signal logo"></span>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-grey">
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-globe logo slideanim"></span>
+      </div>
+      <div class="col-sm-8">
+        <h2>Summary</h2>
+        <h4><strong>Expertise</strong> in Architecture, Design and Development of scalable, high-performance & high availability solutions</h4><br>
+        <p>I develop and maintain new or improved software products, procedures, and techniques. Responsibilities include providing innovative and cost-effective engineering solutions to meet technical objectives and timing. With increasing experience and seniority, I will supervise and mentor junior engineers, participate in activities to define and implement frameworks and design practices, as well as in knowledge-sharing activities.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About me part  ends here -->
+
+<!-- Values part  starts here -->
+<div id="values">
+  <div class="container-fluid text-center">
+    <h2>My Values</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-thumbs-up logo-small"></span>
+        <h4><strong>G</strong>enerosity</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-sunglasses logo-small"></span>
+        <h4><strong>R</strong>estraint</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-tint logo-small"></span>
+        <h4><strong>O</strong>bedience</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-asterisk logo-small"></span>
+        <h4><strong>W</strong>isdom</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-time logo-small"></span>
+        <h4><strong>T</strong>imeliness</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-list-alt logo-small"></span>
+        <h4><strong>H</strong>ard Work</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Values part  ends here -->
+
+<!-- Portfolio part  starts here -->
+<div id="portfolio">
+  <div class="container-fluid bg-grey text-center">
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+          <div class="panel-heading">
+              <h1>GRE Words</h1>
+          </div>
+          <div class="panel-body">
+              <img src="https://lh5.ggpht.com/_-NYF1i-MA7zMbUz2bEziSsjFYg9SN4ZoeIulT4y6PoRm5WkRJosmt2eJJe79E1Ffg=w300-rw" alt="Gre Words">
+          </div>
+          <div class="panel-footer plan">
+              <button class="btn btn-lg">Download</button>
+          </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <h2>Chats App</h2>
+        <img src="https://lh3.ggpht.com/UiqhZUsfWkRGDlV6U_svb7XyrIIZmDvzUl1UFf4QYqxdKsT87aXeGAXHDRyZxXv_pg=w300-rw" alt="Chats App">
+        <button class="btn btn-lg">Download</button>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <h2>Tara</h2>
+        <img src="https://lh3.googleusercontent.com/wRx8Co7fuEmOL4gPe127qkLmTLeoDkXvQwKpfJDeNlN8ld9TrJG-cMoahRZBS9UU_Ws=w300-rw" alt="Tara">
+        <button class="btn btn-lg">Download</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio part  ends here -->
+
+<!-- Footer part  starts here -->
+<div class="footer-bottom">
+     <div class="container">
+        <div class="row">
+           <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 "><p class="copyright">&copy; Copyright 2015 by Kartheek. All&nbsp;Rights&nbsp;Reserved.</p></div>
+           <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 ">
+              <ul class="nav navbar-nav navbar-right list-inline">
+                    <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+           </div>
+        </div>
+     </div>
+</div>
+<!-- Footer part  ends here-->

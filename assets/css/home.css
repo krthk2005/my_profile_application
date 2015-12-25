@@ -31,3 +31,16 @@
 .footer-bottom .list-inline>li {
     display: inline-block;
 }
+
+#home .container-fluid, #values .container-fluid, #portfolio .container-fluid {
+    padding: 60px 50px;
+}
+.bg-grey{
+    background-color: #f6f6f6;
+}
+.logo-small {
+    font-size: 50px;
+}
+.logo{
+    font-size: 200px;
+}
