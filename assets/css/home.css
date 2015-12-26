@@ -20,7 +20,7 @@
     margin: auto;
     min-height:200px;
 }
-#about .container-fluid, #values .container-fluid, #portfolio .container-fluid, #contact .container-fluid {
+#about .container-fluid, #values .container-fluid, #portfolio .container-fluid, #contact .container-fluid, #photoGallery .container-fluid {
     padding: 60px 50px;
 }
 
@@ -65,8 +65,27 @@
 .panel:hover {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
-
-
+/*Picture Horizontal scroll*/
+.cover-container {
+    height: 180px;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.cover-item {
+    position: relative;
+    display: inline-block;
+    margin: 8px 8px;
+    box-shadow: 2px 2px 4px #bbb;
+    border-top-right-radius: 4px;
+    width: 116px;
+    height: 158px;
+    vertical-align: bottom;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* Footer */
 .footer-bottom {
     background: #25292C;
