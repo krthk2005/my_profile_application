@@ -82,7 +82,7 @@ app.controller('MainCtrl', ['$scope', function($scope){
     $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
             event.preventDefault();
             var hash = this.hash;
-            if(hash.length > 1){
+            if(hash.length > 1 && !angular.isUndefined($(hash).offset())){
                 $('html, body').animate({
                   scrollTop: $(hash).offset().top
                 }, 'slow');  
