@@ -1,32 +1,6 @@
-var app = angular.module('myApp.home', ['highcharts-ng','myApp.click.scroll']);
-
-app.controller('MainCtrl', ['$scope', function($scope){
-	$scope.tab = 1;
-	$scope.displayContent = function(tab){
-		$scope.tab = tab;
-	};
-
-
-  $scope.addPoints = function () {
-        var seriesArray = $scope.chartConfig.series
-        var rndIdx = Math.floor(Math.random() * seriesArray.length);
-        seriesArray[rndIdx].data = seriesArray[rndIdx].data.concat([10])
-    };
-
-    $scope.swapChartType = function () {
-        if (this.chartConfig.options.chart.type === 'line') {
-            this.chartConfig.options.chart.type = 'bar'
-        } else {
-            this.chartConfig.options.chart.type = 'line'
-            this.chartConfig.options.chart.zoomType = 'x'
-        }
-    }
-
-    $scope.toggleLoading = function () {
-        this.chartConfig.loading = !this.chartConfig.loading
-    }
-
-    $scope.chartConfig = {
+angular.module('myApp.home', [])
+.factory('chartConfiguration', function(){
+	var chartConfig = {
         options: {
           chart: {
               type: 'line'
@@ -79,5 +53,5 @@ app.controller('MainCtrl', ['$scope', function($scope){
             data: [2, 4, 5, 6, 8, 9]
         }]
     }
-
-}]);
+    return chartConfig;
+})
