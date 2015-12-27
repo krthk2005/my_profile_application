@@ -1,33 +1,16 @@
-var app = angular.module('myApp.home', ['myApp.nav.scroll','highcharts-ng']);
+var app = angular.module('myApp.home', ['highcharts-ng']);
 
 app.controller('MainCtrl', ['$scope', function($scope){
 	$scope.tab = 1;
 	$scope.displayContent = function(tab){
 		$scope.tab = tab;
 	};
-	$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
-    // Prevent default anchor click behavior
-    event.preventDefault();
-
-    // Store hash
-    var hash = this.hash;
-
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
-   
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-    });
-  });
 
   $scope.addPoints = function () {
         var seriesArray = $scope.chartConfig.series
         var rndIdx = Math.floor(Math.random() * seriesArray.length);
-        seriesArray[rndIdx].data = seriesArray[rndIdx].data.concat([1, 10, 20])
+        seriesArray[rndIdx].data = seriesArray[rndIdx].data.concat([10])
     };
 
     $scope.swapChartType = function () {
@@ -51,7 +34,7 @@ app.controller('MainCtrl', ['$scope', function($scope){
         },
        title: {
             text: 'Awareness on various',
-            x: -20 //center
+            x: -20
         },
         subtitle: {
             text: 'Technologies',
@@ -69,9 +52,6 @@ app.controller('MainCtrl', ['$scope', function($scope){
                 width: 1,
                 color: '#808080'
             }]
-        },
-        tooltip: {
-            valueSuffix: '°C'
         },
         legend: {
             layout: 'vertical',
@@ -99,5 +79,14 @@ app.controller('MainCtrl', ['$scope', function($scope){
             data: [2, 4, 5, 6, 8, 9]
         }]
     }
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+            event.preventDefault();
+            var hash = this.hash;
+            if(hash.length > 1){
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 'slow');  
+            }
+    });
 
 }])
