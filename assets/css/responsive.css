@@ -1,5 +1,24 @@
-/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
-@media (max-width:320px) {
+/* hi-res laptops and desktops */
+@media (max-width:1281px) {
+
+}
+/* big landscape tablets, laptops, and desktops */
+@media (max-width:1025px) {
+
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (max-width:801px) {
+	.col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+     #photoGallery .container-fluid{
+    	padding: 50px 10px;
+	}
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (max-width:600px) {
 
 }
 
@@ -8,25 +27,7 @@
 
 }
 
-/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-@media (max-width:600px) {
-
-}
-
-/* tablet, landscape iPad, lo-res laptops ands desktops */
-@media (max-width:801px) {
-	.col-sm-4 {
-        text-align: center;
-        margin: 25px 0;
-    }
-}
-
-/* big landscape tablets, laptops, and desktops */
-@media (max-width:1025px) {
-
-}
-
-/* hi-res laptops and desktops */
-@media (max-width:1281px) {
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+@media (max-width:320px) {
 
 }
