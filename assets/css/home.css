@@ -21,7 +21,10 @@
     min-height:200px;
 }
 #about .container-fluid, #values .container-fluid, #portfolio .container-fluid, #contact .container-fluid, #photoGallery .container-fluid, #milestones .container-fluid {
-    padding: 60px 50px;
+    padding: 60px 40px;
+}
+#galleryCarousel{
+    padding-top: 45px;    
 }
 
 .top-buffer{
